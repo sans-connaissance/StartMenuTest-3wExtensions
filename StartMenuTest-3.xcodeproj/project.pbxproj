@@ -15,6 +15,7 @@
 		41B5F00B26D5A2B0009FFD86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B5F00926D5A2B0009FFD86 /* Main.storyboard */; };
 		41B5F00D26D5A2B2009FFD86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B5F00C26D5A2B2009FFD86 /* Assets.xcassets */; };
 		41B5F01526D5C5CF009FFD86 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B5F01426D5C5CF009FFD86 /* MenuScene.sks */; };
+		41B5F01726D5CA7B009FFD86 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5F01626D5CA7B009FFD86 /* MenuScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		41B5F00C26D5A2B2009FFD86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41B5F00E26D5A2B2009FFD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B5F01426D5C5CF009FFD86 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		41B5F01626D5CA7B009FFD86 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				41B5F00C26D5A2B2009FFD86 /* Assets.xcassets */,
 				41B5F00E26D5A2B2009FFD86 /* Info.plist */,
 				41B5F01426D5C5CF009FFD86 /* MenuScene.sks */,
+				41B5F01626D5CA7B009FFD86 /* MenuScene.swift */,
 			);
 			path = "StartMenuTest-3";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B5F00626D5A2B0009FFD86 /* GameScene.swift in Sources */,
+				41B5F01726D5CA7B009FFD86 /* MenuScene.swift in Sources */,
 				41B5F00826D5A2B0009FFD86 /* GameViewController.swift in Sources */,
 				41B5F00026D5A2B0009FFD86 /* AppDelegate.swift in Sources */,
 			);
