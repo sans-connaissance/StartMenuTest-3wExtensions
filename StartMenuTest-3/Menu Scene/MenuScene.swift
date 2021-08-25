@@ -36,16 +36,17 @@ class MenuScene: SKScene {
                     gameScene.scaleMode = .aspectFit
                     self.view?.presentScene(gameScene, transition: transition)
                 }
-                
-//                let transition = SKTransition.fade(withDuration: 1)
-//                let gameScene = GameScene(size: self.size)
-//                self.view?.presentScene(gameScene, transition: transition)
             }
+            
+            if nodesArray.first?.name == "settingsButton" {
+                
+                if let optionsScene = OptionsScene(fileNamed: "OptionsScene") {
+                    let transition = SKTransition.fade(withDuration: 1)
+                    optionsScene.scaleMode = .aspectFit
+                    self.view?.presentScene(optionsScene, transition: transition)
+                }
+            }
+            
         }
-        
-        
     }
-    
-    
-    
 }
