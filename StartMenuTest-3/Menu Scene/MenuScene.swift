@@ -30,9 +30,16 @@ class MenuScene: SKScene {
             let nodesArray = self.nodes(at: location)
             
             if nodesArray.first?.name == "newGameButton" {
-                let transition = SKTransition.fade(withDuration: 1)
-                let gameScene = GameScene(size: self.size)
-                self.view?.presentScene(gameScene, transition: transition)
+                
+                if let gameScene = GameScene(fileNamed: "GameScene") {
+                    let transition = SKTransition.fade(withDuration: 1)
+                    gameScene.scaleMode = .aspectFit
+                    self.view?.presentScene(gameScene, transition: transition)
+                }
+                
+//                let transition = SKTransition.fade(withDuration: 1)
+//                let gameScene = GameScene(size: self.size)
+//                self.view?.presentScene(gameScene, transition: transition)
             }
         }
         

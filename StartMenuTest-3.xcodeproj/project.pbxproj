@@ -47,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				41B5EFFE26D5A2B0009FFD86 /* StartMenuTest-3 */,
+				41B5F00C26D5A2B2009FFD86 /* Assets.xcassets */,
 				41B5EFFD26D5A2B0009FFD86 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,18 +63,33 @@
 		41B5EFFE26D5A2B0009FFD86 /* StartMenuTest-3 */ = {
 			isa = PBXGroup;
 			children = (
+				41B5F00E26D5A2B2009FFD86 /* Info.plist */,
 				41B5EFFF26D5A2B0009FFD86 /* AppDelegate.swift */,
-				41B5F00126D5A2B0009FFD86 /* GameScene.sks */,
 				41B5F00326D5A2B0009FFD86 /* Actions.sks */,
-				41B5F00526D5A2B0009FFD86 /* GameScene.swift */,
 				41B5F00726D5A2B0009FFD86 /* GameViewController.swift */,
 				41B5F00926D5A2B0009FFD86 /* Main.storyboard */,
-				41B5F00C26D5A2B2009FFD86 /* Assets.xcassets */,
-				41B5F00E26D5A2B2009FFD86 /* Info.plist */,
+				41B5F01826D5D800009FFD86 /* Menu Scene */,
+				41B5F01926D5D80F009FFD86 /* Level 1 Scene */,
+			);
+			path = "StartMenuTest-3";
+			sourceTree = "<group>";
+		};
+		41B5F01826D5D800009FFD86 /* Menu Scene */ = {
+			isa = PBXGroup;
+			children = (
 				41B5F01426D5C5CF009FFD86 /* MenuScene.sks */,
 				41B5F01626D5CA7B009FFD86 /* MenuScene.swift */,
 			);
-			path = "StartMenuTest-3";
+			path = "Menu Scene";
+			sourceTree = "<group>";
+		};
+		41B5F01926D5D80F009FFD86 /* Level 1 Scene */ = {
+			isa = PBXGroup;
+			children = (
+				41B5F00126D5A2B0009FFD86 /* GameScene.sks */,
+				41B5F00526D5A2B0009FFD86 /* GameScene.swift */,
+			);
+			path = "Level 1 Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
