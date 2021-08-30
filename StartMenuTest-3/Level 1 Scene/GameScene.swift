@@ -8,13 +8,29 @@
 import SpriteKit
 import GameplayKit
 
+
+
+
 class GameScene: SKScene {
-    
+    var addPointsLabelNode: SKLabelNode!
     var quitLabelNode: SKLabelNode!
     var nextLevelNode: SKLabelNode!
     
+    var scoreLabelNode = SKLabelNode(fontNamed: "AvenirNextCondensed-Bold")
+    var score = 0 {
+        didSet {
+            scoreLabelNode.text = "\(score)"
+        }
+    }
+
+
+    
     
     override func didMove(to view: SKView) {
+        
+        scoreLabelNode = (self.childNode(withName: "scoreLabel") as! SKLabelNode)
+        
+        addPointsLabelNode = (self.childNode(withName: "addPointsLabel") as! SKLabelNode)
         
         quitLabelNode = (self.childNode(withName: "quitLabel") as! SKLabelNode)
         nextLevelNode  = (self.childNode(withName: "nextLevelLabel") as! SKLabelNode)
@@ -48,14 +64,13 @@ class GameScene: SKScene {
                     menuScene.scaleMode = .aspectFill
                     self.view?.presentScene(menuScene, transition: transition)
                 }
+            }
+            if nodesArray.first?.name == "addPointsLabel" {
+             
+                addPoint()
                 
-//                let transition = SKTransition.fade(withDuration: 1)
-//                let gameScene = GameScene(size: self.size)
-//                self.view?.presentScene(gameScene, transition: transition)
             }
         }
-        
-        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,5 +88,9 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+    }
+    
+    func addPoint() {
+        score += 1
     }
 }
