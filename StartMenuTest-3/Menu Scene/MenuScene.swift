@@ -33,7 +33,7 @@ class MenuScene: SKScene {
                 
                 if let gameScene = GameScene(fileNamed: "GameScene") {
                     let transition = SKTransition.fade(withDuration: 1)
-                    gameScene.scaleMode = .aspectFit
+                    gameScene.scaleMode = .aspectFill
                     self.view?.presentScene(gameScene, transition: transition)
                 }
             }
@@ -42,11 +42,10 @@ class MenuScene: SKScene {
                 
                 if let optionsScene = OptionsScene(fileNamed: "OptionsScene") {
                     let transition = SKTransition.fade(withDuration: 1)
-                    optionsScene.scaleMode = .aspectFit
+                    optionsScene.scaleMode = .aspectFill
                     self.view?.presentScene(optionsScene, transition: transition)
                 }
             }
-            
         }
     }
 }

@@ -45,7 +45,7 @@ class GameScene: SKScene {
                 
                 if let menuScene = MenuScene(fileNamed: "MenuScene") {
                     let transition = SKTransition.fade(withDuration: 1)
-                    menuScene.scaleMode = .aspectFit
+                    menuScene.scaleMode = .aspectFill
                     self.view?.presentScene(menuScene, transition: transition)
                 }
                 
