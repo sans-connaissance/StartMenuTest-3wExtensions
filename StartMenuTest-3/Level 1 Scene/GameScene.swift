@@ -59,11 +59,7 @@ class GameScene: SKScene {
             
             if nodesArray.first?.name == "quitLabel" {
                 
-                if let menuScene = MenuScene(fileNamed: "MenuScene") {
-                    let transition = SKTransition.fade(withDuration: 1)
-                    menuScene.scaleMode = .aspectFill
-                    self.view?.presentScene(menuScene, transition: transition)
-                }
+                SceneManager.shared.transition(self, toScene: .MenuScene, transition: SKTransition.fade(withDuration: 1))
             }
             if nodesArray.first?.name == "addPointsLabel" {
              

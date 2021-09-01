@@ -27,11 +27,7 @@ class OptionsScene: SKScene {
             
             if nodesArray.first?.name == "backLabel" {
                 
-                if let menuScene = MenuScene(fileNamed: "MenuScene") {
-                    let transition = SKTransition.fade(withDuration: 1)
-                    menuScene.scaleMode = .aspectFill
-                    self.view?.presentScene(menuScene, transition: transition)
-                }
+                SceneManager.shared.transition(self, toScene: .MenuScene, transition: SKTransition.fade(withDuration: 1))
             }
         }
     }

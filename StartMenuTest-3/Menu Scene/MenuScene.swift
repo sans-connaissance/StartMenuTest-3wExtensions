@@ -39,11 +39,7 @@ class MenuScene: SKScene {
             
             if nodesArray.first?.name == "settingsButton" {
                 
-                if let optionsScene = OptionsScene(fileNamed: "OptionsScene") {
-                    let transition = SKTransition.fade(withDuration: 1)
-                    optionsScene.scaleMode = .aspectFill
-                    self.view?.presentScene(optionsScene, transition: transition)
-                }
+                SceneManager.shared.transition(self, toScene: .OptionsScene, transition: SKTransition.fade(withDuration: 1))
             }
         }
     }
