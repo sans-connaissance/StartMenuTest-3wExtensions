@@ -18,6 +18,7 @@
 		41B5F01726D5CA7B009FFD86 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5F01626D5CA7B009FFD86 /* MenuScene.swift */; };
 		41B5F01C26D5DFFF009FFD86 /* OptionsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B5F01B26D5DFFF009FFD86 /* OptionsScene.sks */; };
 		41B5F01E26D5E0A1009FFD86 /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5F01D26D5E0A1009FFD86 /* OptionsScene.swift */; };
+		41F72F6A26DF0A4900E270EE /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F72F6926DF0A4900E270EE /* SceneManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		41B5F01626D5CA7B009FFD86 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		41B5F01B26D5DFFF009FFD86 /* OptionsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OptionsScene.sks; sourceTree = "<group>"; };
 		41B5F01D26D5E0A1009FFD86 /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
+		41F72F6926DF0A4900E270EE /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				41B5F00326D5A2B0009FFD86 /* Actions.sks */,
 				41B5F00726D5A2B0009FFD86 /* GameViewController.swift */,
 				41B5F00926D5A2B0009FFD86 /* Main.storyboard */,
+				41F72F6826DF0A2800E270EE /* Utilities */,
 				41B5F01826D5D800009FFD86 /* Menu Scene */,
 				41B5F01A26D5DFDB009FFD86 /* Options Scene */,
 				41B5F01926D5D80F009FFD86 /* Level 1 Scene */,
@@ -104,6 +107,14 @@
 				41B5F01D26D5E0A1009FFD86 /* OptionsScene.swift */,
 			);
 			path = "Options Scene";
+			sourceTree = "<group>";
+		};
+		41F72F6826DF0A2800E270EE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				41F72F6926DF0A4900E270EE /* SceneManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				41B5F01726D5CA7B009FFD86 /* MenuScene.swift in Sources */,
 				41B5F00826D5A2B0009FFD86 /* GameViewController.swift in Sources */,
 				41B5F01E26D5E0A1009FFD86 /* OptionsScene.swift in Sources */,
+				41F72F6A26DF0A4900E270EE /* SceneManager.swift in Sources */,
 				41B5F00026D5A2B0009FFD86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
