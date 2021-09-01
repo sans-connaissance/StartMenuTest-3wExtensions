@@ -33,11 +33,8 @@ class MenuScene: SKScene {
             
             if nodesArray.first?.name == "newGameButton" {
                 
-                if let gameScene = GameScene(fileNamed: "GameScene") {
-                    let transition = SKTransition.fade(withDuration: 1)
-                    gameScene.scaleMode = .aspectFill
-                    self.view?.presentScene(gameScene, transition: transition)
-                }
+                SceneManager.shared.transition(self, toScene: .GameScene, transition: SKTransition.fade(withDuration: 1))
+                
             }
             
             if nodesArray.first?.name == "settingsButton" {

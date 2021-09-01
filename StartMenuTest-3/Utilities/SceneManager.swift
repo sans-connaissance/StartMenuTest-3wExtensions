@@ -21,6 +21,7 @@ class SceneManager {
     static let shared = SceneManager()
     
     func transition(_ fromScene: SKScene, toScene: SceneType, transition: SKTransition? = nil ) {
+        
       guard let scene = getScene(toScene) else { return }
       
       if let transition = transition {
@@ -38,11 +39,11 @@ class SceneManager {
     func getScene(_ sceneType: SceneType) -> SKScene? {
       switch sceneType {
       case SceneType.MenuScene:
-        return MenuScene()
+        return MenuScene(fileNamed: "MenuScene")
       case SceneType.OptionsScene:
-        return OptionsScene()
+        return OptionsScene(fileNamed: "OptionsScene")
       case SceneType.GameScene:
-        return GameScene()
+        return GameScene(fileNamed: "GameScene")
       }
     }
     
