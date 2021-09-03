@@ -27,7 +27,7 @@ class OptionsScene: SKScene {
             
             if nodesArray.first?.name == "backLabel" {
                 
-                SceneManager.shared.transition(self, toScene: .MenuScene, transition: SKTransition.fade(withDuration: 1))
+                transition(self, toScene: .MenuScene, transition: SKTransition.fade(withDuration: 1))
             }
         }
     }

@@ -22,8 +22,8 @@ class GameScene: SKScene {
             scoreLabelNode.text = "\(score)"
         }
     }
-
-
+    
+    
     
     
     override func didMove(to view: SKView) {
@@ -59,10 +59,12 @@ class GameScene: SKScene {
             
             if nodesArray.first?.name == "quitLabel" {
                 
-                SceneManager.shared.transition(self, toScene: .MenuScene, transition: SKTransition.fade(withDuration: 1))
+                transition(self, toScene: .MenuScene, transition: SKTransition.fade(withDuration: 1))
+                
+                
             }
             if nodesArray.first?.name == "addPointsLabel" {
-             
+                
                 addPoint()
                 
             }

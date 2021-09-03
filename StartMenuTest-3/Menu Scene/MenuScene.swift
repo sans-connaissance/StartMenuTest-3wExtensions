@@ -33,13 +33,13 @@ class MenuScene: SKScene {
             
             if nodesArray.first?.name == "newGameButton" {
                 
-                SceneManager.shared.transition(self, toScene: .GameScene, transition: SKTransition.fade(withDuration: 1))
+                transition(self, toScene: .GameScene, transition: SKTransition.fade(withDuration: 1))
                 
             }
             
             if nodesArray.first?.name == "settingsButton" {
                 
-                SceneManager.shared.transition(self, toScene: .OptionsScene, transition: SKTransition.fade(withDuration: 1))
+                transition(self, toScene: .OptionsScene, transition: SKTransition.fade(withDuration: 1))
             }
         }
     }
